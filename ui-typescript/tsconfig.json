@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "es6",
+        "target": "es5",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "allowJs": false,
+        "resolveJsonModule": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitThis": true,
+        "skipLibCheck": false,
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "companion-server",
+  "version": "1.0.0",
+  "description": "companion server for unreal streamer",
+  "scripts": {
+    "start": "npm install && npm run pack-server && node companion-server-bundled.js",
+    "pack-server": "webpack --config ./webpack-server.config.js --progress --mode=production",
+    "watch-server": "webpack --config ./webpack-server.config.js --watch --progress --mode=development"
+  },
+  "dependencies": {
+    "@pixstream/companion": "^1.0.2",
+    "@pixstream/server": "^1.0.2",
+    "@pixstream/universal": "^1.0.2",
+    "express": "^4.18.2",
+    "webpack": "^5.73.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^14.15.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack-cli": "^4.10.0"
+  }
+}

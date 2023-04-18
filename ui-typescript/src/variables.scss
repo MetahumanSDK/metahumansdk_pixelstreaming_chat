@@ -1,0 +1,36 @@
+$mobileScreenMaxSize: 767px;
+$desktopScreenSize: 1280px;
+
+$defaultEasing: cubic-bezier(0.4, 0.0, 0.2, 1);
+$accelerateEasing: cubic-bezier(0.4, 0.0, 1, 1);
+$decelerateEasing: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+@mixin mobile {
+  @media (max-width: $mobileScreenMaxSize) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: ($mobileScreenMaxSize + 1px)) and (max-width: ($desktopScreenSize - 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width:($desktopScreenSize - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktopScreenSize) {
+    @content;
+  }
+}
+
+@mixin desktop_and_tablet {
+  @media (min-width: ($mobileScreenMaxSize + 1px)) {
+    @content;
+  }
+}

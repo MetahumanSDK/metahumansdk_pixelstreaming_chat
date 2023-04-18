@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>UI unreal pixel streaming typescript example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <audio id="audio" preload="metadata"></audio>
+
+    <div id="streamingContainer" class="streaming-container">
+        <video id="video" disablePictureInPicture></video>
+    </div>
+
+    <!-- Debug -->
+    <div class="debug-controls">
+        <div id="debugMessages" class="messages block"></div>
+    </div>
+
+    <!-- start -->
+    <div id="startPopup" class="fullscreen-popup transparent" onclick="startIfNotStarted()">
+        <div class="content short">
+            <h1>Introducing cloud avatar rendering</h1>
+            <p>Video cloud rendering of Metahuman with lipsync and voice assistant integrated.</p>
+            <p>To start press the text bar below.</p>
+        </div>
+    </div>
+
+    <div class="ui">
+        <form onsubmit="sendForm();return false;" class="chat-input-container">
+            <div class="chat-input-wrapper">
+
+                <input id="phraseFormControl"
+                       class="chat-input"
+                       placeholder="type something..."
+                       onclick="startIfNotStarted()"
+                       type="text">
+
+                <button onclick="startIfNotStarted()" class="icon" type="submit"><img id="sendIconImage"></button>
+            </div>
+        </form>
+
+        <div id="statusText" class="connecting"><span data-var="companionStatus"></span>...</div>
+    </div>
+
+    <!-- Afk warning -->
+    <div id="afkWarningPopup" class="fullscreen-popup afk-warning">
+        <div class="content short">
+            <h1>Introducing cloud avatar rendering</h1>
+            <p>Video cloud rendering of Metahuman with lipsync and voice assistant integrated.</p>
+            <p>No activity detected<br />Disconnecting in <span data-var="remainingTime"></span> seconds.<br /></p>
+        </div>
+    </div>
+
+    <!-- Retry -->
+    <div id="retryPopup" class="fullscreen-popup">
+        <div class="content short">
+            <h1>Introducing cloud avatar rendering</h1>
+            <p>Video cloud rendering of Metahuman with lipsync and voice assistant integrated.</p>
+            <p>Reconnection in <span data-var="reconnectionTime"></span></p>
+            <p><span data-var="errorText"></span></p>
+        </div>
+    </div>
+
+    <!-- Reconnect because of AFK-->
+    <div id="innactivityPopup" class="fullscreen-popup">
+        <div class="content short">
+            <h1>Introducing cloud avatar rendering</h1>
+            <p>Video cloud rendering of Metahuman with lipsync and voice assistant integrated.</p>
+            <p>You've been disconnected due to inactivity.</p>
+
+            <button onclick="reconnect()" type="button" class="big-action">Reconnect</button>
+        </div>
+    </div>
+
+    <!-- Reconnect because disconnected-->
+    <div id="reconnectPopup" class="fullscreen-popup">
+        <div class="content short">
+            <h1>Introducing cloud avatar rendering</h1>
+            <p>Video cloud rendering of Metahuman with lipsync and voice assistant integrated.</p>
+
+            <button onclick="reconnect()" type="button" class="big-action">Reconnect</button>
+        </div>
+    </div>
+</body>
+
+</html>

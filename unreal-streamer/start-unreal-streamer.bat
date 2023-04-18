@@ -1,0 +1,1 @@
+PixelStreamingDemo.exe -Renderoffscreen -ForceRes -ResX=1080 -RexY=1080 -AudioMixer - PixelStreamingURL=ws://localhost:8888 -log

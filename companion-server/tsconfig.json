@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "allowJs": false,
+        "resolveJsonModule": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitThis": true,
+        "skipLibCheck": false,
+        "types": [
+            "node"
+        ]
+    }
+}

@@ -9,7 +9,7 @@ What's included:
 * customizable web UI with npm and typescript compatibility
 * tweakable **Browser ⇔ Unreal Engine** communication protocol
 * ready for AI generated speech or audio files
-* multilingual lip sync (powered by [MetaHuman SDK](https://www.unrealengine.com/marketplace/en-US/item/66b869fa0d3748e78d422e59716597b6)) with Microsoft Azure and Google voices
+* multilingual lip sync (powered by [MetaHuman SDK](https://www.unrealengine.com/marketplace/en-US/item/66b869fa0d3748e78d422e59716597b6)) with Microsoft Azure or Google voices
 * scallable architecture
 
 ## What's Metahuman SDK?

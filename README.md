@@ -20,7 +20,7 @@ MetaHumanSDK is a set of tools for creation of an immersive interaction with a d
 
 ## Demo
 
-Here will be youtube video soon!
+[Video Example](https://youtu.be/gR_WcGTmenU)
 
 ### Naming
 

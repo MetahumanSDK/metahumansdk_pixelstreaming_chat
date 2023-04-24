@@ -19,8 +19,7 @@ MetaHumanSDK is a set of tools for creation of an immersive interaction with a d
 [Metahuman SDK on UE marketplace](https://www.unrealengine.com/marketplace/en-US/item/66b869fa0d3748e78d422e59716597b6)
 
 ## Demo
-
-[Video Example](https://youtu.be/gR_WcGTmenU)
+📺 [Video Example](https://youtu.be/gR_WcGTmenU)
 
 ### Naming
 
